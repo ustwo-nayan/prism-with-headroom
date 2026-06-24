@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=78.1.1"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -27,9 +27,9 @@ classifiers = [
 [project.optional-dependencies]
 # Only needed if you set HEADROOM_OAUTH2_HEADERS (static upstream headers via litellm.headers).
 # The token-minting + injection path is standard-library only and needs none of this.
-litellm = ["litellm>=1.40"]
-dev = ["pytest>=7", "ruff"]
-test = ["pytest>=7"]
+litellm = ["litellm>=1.84.0"]
+dev = ["pytest>=9.0.3", "ruff"]
+test = ["pytest>=9.0.3"]
 
 [project.urls]
 Homepage = "https://github.com/chopratejas/headroom"
